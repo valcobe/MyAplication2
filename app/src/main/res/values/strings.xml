@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MyAplication2</string>
+    <string name="intro1">Introduce the bye message</string>
+    <string name="hello">Hello World!</string>
+    <string name="indicator">Bye Message</string>
+    <string name="nrep">Number of Repetitions</string>
+    <string name="byeBut">GO TO BYE SCREEN</string>
+    <string name="helpbye">Introduce your bye message</string>
+    <string name="white"></string>
+    <string name="backBut">GO BACK</string>
+    <string name="mss">ByeMess</string>
+    <string name="rep">NumReps</string>
+    <string name="defaultBye">Bye!</string>
+    <string name="defaultRep">1</string>
+    <string name="messageKey">mess</string>
+</resources>
