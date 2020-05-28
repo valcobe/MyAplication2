@@ -32,12 +32,6 @@ public class SecondActivity extends AppCompatActivity {
         return concatMess;
     }
 
-    private void controler(String mess) {
-        Button button = findViewById(R.id.button2);
-        button.setOnClickListener(new Changer(mess));
-        button.requestFocus();
-    }
-
     private class Changer implements View.OnClickListener {
         String message;
 
@@ -53,4 +47,11 @@ public class SecondActivity extends AppCompatActivity {
             finish();
         }
     }
+
+    private void controler(String mess) {
+        Button button = findViewById(R.id.button2);
+        button.setOnClickListener(new Changer(mess));
+        button.requestFocus();
+    }
+
 }

@@ -21,9 +21,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data){
-        if(requestCode == 1){
-            if(resultCode == RESULT_OK){
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1) {
+            if (resultCode == RESULT_OK) {
                 editText1.getText().clear();
                 this.editText1.setHint(R.string.helpbye);
                 this.editText1.requestFocus();
@@ -63,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
             if (reps.isEmpty()) reps = getString(R.string.defaultRep);
             int nReps = Integer.parseInt(reps);
             if (nReps > 50000) nReps = 10000;   //per evitar aturades en l'aplicació
-
             Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
             intent.putExtra(getString(R.string.mss), message);
             intent.putExtra(getString(R.string.rep), nReps);
