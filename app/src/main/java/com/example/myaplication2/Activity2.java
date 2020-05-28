@@ -13,7 +13,9 @@ public class Activity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.secundary_activity);
         String message = readParameters();
-        controler(message);
+        Button button = findViewById(R.id.button2);
+        button.setOnClickListener(new Changer(message));
+        button.requestFocus();
     }
 
     private class Changer implements View.OnClickListener {
@@ -30,12 +32,6 @@ public class Activity2 extends AppCompatActivity {
             setResult(RESULT_OK, intent);
             finish();
         }
-    }
-
-    private void controler(String mess) {
-        Button button = findViewById(R.id.button2);
-        button.setOnClickListener(new Changer(mess));
-        button.requestFocus();
     }
 
     private String readParameters() {
