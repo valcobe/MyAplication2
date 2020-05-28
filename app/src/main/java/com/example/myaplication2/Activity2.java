@@ -40,6 +40,7 @@ public class Activity2 extends AppCompatActivity {
         String message = data.getString(getString(R.string.mss));
 
         String concatMess = message;
+
         for (int i = 1; i < numRep; i++) {
             concatMess = concatMess.concat(message);
         }

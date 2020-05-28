@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             String reps = this.et2.getText().toString();
             if (reps.isEmpty()) reps = getString(R.string.defaultRep);
             int nReps = Integer.parseInt(reps);
-            
+
 
             Intent intent = new Intent(getApplicationContext(), Activity2.class);
             intent.putExtra(getString(R.string.mss), message);
