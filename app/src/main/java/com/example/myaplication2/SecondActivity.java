@@ -16,22 +16,6 @@ public class SecondActivity extends AppCompatActivity {
         controler(message);
     }
 
-    private String readParameters() {
-        Bundle data = this.getIntent().getExtras();
-        int numRep = data.getInt(getString(R.string.rep));
-        String message = data.getString(getString(R.string.mss));
-
-        String concatMess = message;
-        for (int i = 1; i < numRep; i++) {
-            concatMess = concatMess.concat(message);
-        }
-
-        TextView byeText = findViewById(R.id.textViewBye);
-        byeText.setText(concatMess);
-
-        return concatMess;
-    }
-
     private class Changer implements View.OnClickListener {
         String message;
 
@@ -53,5 +37,22 @@ public class SecondActivity extends AppCompatActivity {
         button.setOnClickListener(new Changer(mess));
         button.requestFocus();
     }
+
+    private String readParameters() {
+        Bundle data = this.getIntent().getExtras();
+        int numRep = data.getInt(getString(R.string.rep));
+        String message = data.getString(getString(R.string.mss));
+
+        String concatMess = message;
+        for (int i = 1; i < numRep; i++) {
+            concatMess = concatMess.concat(message);
+        }
+
+        TextView byeText = findViewById(R.id.textViewBye);
+        byeText.setText(concatMess);
+
+        return concatMess;
+    }
+
 
 }
