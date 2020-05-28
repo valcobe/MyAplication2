@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
             if (reps.isEmpty()) reps = getString(R.string.defaultRep);
             int nReps = Integer.parseInt(reps);
             if (nReps > 50000) nReps = 10000;   //per evitar aturades en l'aplicació
-            Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
+            Intent intent = new Intent(getApplicationContext(), Activity2.class);
             intent.putExtra(getString(R.string.mss), message);
             intent.putExtra(getString(R.string.rep), nReps);
             startActivityForResult(intent, 1);
