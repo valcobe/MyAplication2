@@ -2,10 +2,10 @@
     <string name="app_name">MyAplication2</string>
     <string name="intro1">Introduce the bye message</string>
     <string name="hello">Hello World!</string>
-    <string name="indicator">Bye Message</string>
-    <string name="nrep">Number of Repetitions</string>
+    <string name="indicator">Introduce the bye message</string>
+    <string name="nrep">Introduce the number of repetitions</string>
     <string name="byeBut">GO TO BYE SCREEN</string>
-    <string name="helpbye">Introduce your bye message</string>
+    <string name="helpbye">Bye message</string>
     <string name="white"></string>
     <string name="backBut">GO BACK</string>
     <string name="mss">ByeMess</string>
